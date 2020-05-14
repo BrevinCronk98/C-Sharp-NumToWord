@@ -60,10 +60,14 @@ namespace NumToWord
                             {
                                 tempWords.Insert(0, tensValues[(newString[i].ToString())]);
                             }
+                        else if ((i%3 == 2 && int.Parse((newString[i]).ToString()) !=0) && (i%3 == 2 && int.Parse((newString[(i - 1)]).ToString()) == 0) && (i%3 == 2 && int.Parse((newString[(i - 2)]).ToString()) == 0))
+                            {
+                               tempWords.Insert(0, onesValues[(newString[i].ToString())]+ "Hundred ");
+                            }
                         else if (i%3 == 2 && int.Parse((newString[i]).ToString()) != 0) //  i = 2, 5, 8, 11
                             {
-                                tempWords.Insert(0, onesValues[(newString[i].ToString())]+ "Hundred ");
-                            }
+                                tempWords.Insert(0, onesValues[(newString[i].ToString())]+ "Hundred and ");
+                            }  
                     }
                 
                 Word = tempWords.ToString();

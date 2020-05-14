@@ -46,12 +46,20 @@ namespace NumToWord.Tests
       Assert.AreEqual("Thirty Five ", NumToWord.Word);
     }
     [TestMethod]
+    public void NumberToWord_DoHundredsNotAddAnd_FourHundred()
+    {
+      NumToWord numbah = new NumToWord();
+      NumToWord.FillDictionaries();
+      NumToWord.NumberToWord(400);
+      Assert.AreEqual("Four Hundred ", NumToWord.Word);
+    }
+    [TestMethod]
     public void NumberToWord_DoThreeDigitNumbersConvertCorrectly_FourHundredThirtyFive()
     {
       NumToWord numbah = new NumToWord();
       NumToWord.FillDictionaries();
       NumToWord.NumberToWord(435);
-      Assert.AreEqual("Four Hundred Thirty Five ", NumToWord.Word);
+      Assert.AreEqual("Four Hundred and Thirty Five ", NumToWord.Word);
     }
     [TestMethod]
     public void NumberToWord_Do4DigitNumbersConvertCorrectly_FourThousandFourHundredThirtyGive()
@@ -59,7 +67,7 @@ namespace NumToWord.Tests
       NumToWord numbah = new NumToWord();
       NumToWord.FillDictionaries();
       NumToWord.NumberToWord(4435);
-      Assert.AreEqual("Four Thousand Four Hundred Thirty Five ", NumToWord.Word);
+      Assert.AreEqual("Four Thousand Four Hundred and Thirty Five ", NumToWord.Word);
     }
     [TestMethod]
     public void NumberToWord_DoMillionsNumbersConvertCorrectly_TwoMillionOneHundredFourThousandFourHundredThirtyFive()
@@ -67,7 +75,7 @@ namespace NumToWord.Tests
       NumToWord numbah = new NumToWord();
       NumToWord.FillDictionaries();
       NumToWord.NumberToWord(2104435);
-      Assert.AreEqual("Two Million One Hundred Four Thousand Four Hundred Thirty Five ", NumToWord.Word);
+      Assert.AreEqual("Two Million One Hundred and Four Thousand Four Hundred and Thirty Five ", NumToWord.Word);
     }
     [TestMethod]
     public void NumberToWord_DoBillionsNumbersConvertCorrectly_OneBillionTwoMillionOneHundredFourThousandFourHundredThirtyFive()
@@ -75,7 +83,7 @@ namespace NumToWord.Tests
       NumToWord numbah = new NumToWord();
       NumToWord.FillDictionaries();
       NumToWord.NumberToWord(1002104435);
-      Assert.AreEqual("One Billion Two Million One Hundred Four Thousand Four Hundred Thirty Five ", NumToWord.Word);
+      Assert.AreEqual("One Billion Two Million One Hundred and Four Thousand Four Hundred and Thirty Five ", NumToWord.Word);
     }
 
   }
