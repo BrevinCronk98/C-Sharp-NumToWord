@@ -1,0 +1,9 @@
+C:\Users\cronk\desktop\C-Sharp-Num-To-Word\NumToWord.Solution\obj\Debug\netcoreapp2.2\NumToWord.csprojAssemblyReference.cache
+C:\Users\cronk\desktop\C-Sharp-Num-To-Word\NumToWord.Solution\obj\Debug\netcoreapp2.2\NumToWord.csproj.CoreCompileInputs.cache
+C:\Users\cronk\desktop\C-Sharp-Num-To-Word\NumToWord.Solution\obj\Debug\netcoreapp2.2\NumToWord.AssemblyInfoInputs.cache
+C:\Users\cronk\desktop\C-Sharp-Num-To-Word\NumToWord.Solution\obj\Debug\netcoreapp2.2\NumToWord.AssemblyInfo.cs
+C:\Users\cronk\desktop\C-Sharp-Num-To-Word\NumToWord.Solution\bin\Debug\netcoreapp2.2\NumToWord.deps.json
+C:\Users\cronk\desktop\C-Sharp-Num-To-Word\NumToWord.Solution\bin\Debug\netcoreapp2.2\NumToWord.dll
+C:\Users\cronk\desktop\C-Sharp-Num-To-Word\NumToWord.Solution\bin\Debug\netcoreapp2.2\NumToWord.pdb
+C:\Users\cronk\desktop\C-Sharp-Num-To-Word\NumToWord.Solution\obj\Debug\netcoreapp2.2\NumToWord.dll
+C:\Users\cronk\desktop\C-Sharp-Num-To-Word\NumToWord.Solution\obj\Debug\netcoreapp2.2\NumToWord.pdb
